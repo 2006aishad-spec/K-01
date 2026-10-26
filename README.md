@@ -2,9 +2,9 @@
 
 Aplicação Android de apoio ao estudo e à organização escolar, preparada para o contexto do 11.º ano do Centro Escolar Attadamun, na Guiné-Bissau.
 
-> **Estado do projeto:** o APK analisado está identificado como versão 1.0.0. A presença de ecrãs no pacote não significa que todas as funcionalidades tenham sido testadas ou certificadas. Consulte [a auditoria técnica](docs/AUDITORIA-TECNICA.md).
+> **Estado do projeto:** o APK analisado está identificado como versão 1.0.0. Foi também recebido um ZIP com o projeto-fonte. A estrutura desse ZIP foi inspecionada e está documentada em [docs/ESTRUTURA-CODIGO-FONTE.md](docs/ESTRUTURA-CODIGO-FONTE.md), mas os ficheiros do ZIP ainda não foram todos transferidos para o repositório. Consulte também a [auditoria técnica](docs/AUDITORIA-TECNICA.md).
 
-## Ecrãs identificados no APK
+## Ecrãs identificados
 
 - Início
 - Horário
@@ -13,59 +13,41 @@ Aplicação Android de apoio ao estudo e à organização escolar, preparada par
 - Estudos
 - Boletim
 
-O pacote também contém referências a um fluxo de autenticação. O comportamento real destas funções precisa de ser validado num dispositivo Android.
+O projeto-fonte recebido contém referências a estes ecrãs, configurações Expo/React Native, componentes, armazenamento, servidor, esquema de base de dados e testes. A presença dos ficheiros não significa que todas as funções tenham sido testadas.
 
-## Informações da versão analisada
+## Informações técnicas declaradas
 
-- Versão declarada: `1.0.0`
+- Versão do APK analisado: `1.0.0`
 - Plataforma: Android
-- Tecnologia identificada: React Native + Expo
+- Tecnologia: React Native + Expo
 - Motor JavaScript: Hermes
-- Android mínimo declarado: API 24 (Android 7.0)
-- Android de destino declarado: API 36
-- Arquiteturas incluídas: ARM de 32 e 64 bits
-- Tamanho do APK analisado: aproximadamente 65 MB
+- Expo SDK declarado no projeto-fonte: 57
+- Android mínimo declarado no APK: API 24
+- Android de destino declarado no APK: API 36
+- Tamanho aproximado do APK: 65 MB
 
 ## Descarregar a aplicação
 
-O objetivo é publicar os APKs na secção [Releases](../../releases), para que os utilizadores possam descarregar uma versão identificada. **O APK ainda não está anexado a uma release por esta integração.** Até à publicação, não há aqui um link direto de download da aplicação.
-
-## Instalação Android
-
-Quando o APK estiver publicado na secção Releases:
-
-1. Abra a página [Releases](../../releases).
-2. Escolha a versão desejada e descarregue o ficheiro APK.
-3. Instale apenas se confiar na origem e compreender que a versão ainda precisa de validação.
-4. O Android poderá pedir autorização para instalar aplicações obtidas fora da loja oficial.
-
-## Funcionalidades a validar
-
-- Persistência de horários, notas, eventos e apontamentos após fechar e reabrir a aplicação.
-- Funcionamento sem Internet das funções que devem ser offline.
-- Cálculos das médias, validação de notas e conteúdo do boletim.
-- Autenticação e separação dos dados de cada utilizador.
-- Necessidade de cada permissão Android e tratamento dos dados enviados a serviços externos.
-- Compatibilidade, desempenho e tamanho da instalação.
-
-## Privacidade e segurança
-
-A análise estática do APK encontrou configurações para comunicação com serviços externos e várias permissões Android. Isso não demonstra, por si só, uso indevido. Consulte [docs/AUDITORIA-TECNICA.md](docs/AUDITORIA-TECNICA.md).
-
-**Não coloque neste repositório** palavras-passe, tokens, chaves de API, dados reais de alunos, notas pessoais ou boletins identificáveis.
+O APK ainda não está anexado a uma [Release](../../releases). Não há, neste momento, um link direto de download do APK neste repositório.
 
 ## Código-fonte e sincronização
 
-Este repositório deve conter o código-fonte completo e as instruções de compilação quando forem disponibilizados. O APK compilado, por si só, não substitui o projeto-fonte original.
+O arquivo `code.zip` recebido contém 108 entradas, incluindo código da aplicação e do servidor, configurações, migrações de base de dados e testes. O arquivo ZIP é válido.
 
-Neste momento, este README documenta a versão analisada; não afirma que o código-fonte completo já foi recuperado nem que a publicação automática de novas versões esteja configurada. As alterações feitas no GitHub através desta integração não sincronizam automaticamente uma pasta local ou o projeto original no construtor da aplicação.
+**Atenção:** a inspeção do ZIP não significa que o seu conteúdo já tenha sido carregado integralmente para este repositório. A integração atual permite gerir ficheiros de texto, mas não forneceu uma operação direta para extrair e transferir automaticamente o ZIP completo como um conjunto de ficheiros. A sincronização automática com o construtor original e a compilação de novas versões também não estão configuradas.
+
+## Validação pendente
+
+- Testar a persistência de horários, notas, eventos e apontamentos.
+- Confirmar as fórmulas das médias e os campos do boletim.
+- Testar o funcionamento offline.
+- Rever autenticação, permissões e comunicação com serviços externos.
+- Instalar e compilar o projeto-fonte num ambiente apropriado.
+
+## Privacidade e segurança
+
+Não publiques palavras-passe, tokens, chaves de API, dados reais de alunos, notas pessoais ou boletins identificáveis. Consulta [SECURITY.md](SECURITY.md) e a [auditoria técnica](docs/AUDITORIA-TECNICA.md).
 
 ## Relatar um problema
 
-Ao reportar um erro, indique:
-- modelo do dispositivo e versão Android;
-- versão do K 01;
-- passos para reproduzir o problema;
-- resultado esperado e resultado observado.
-
-Não anexe dados pessoais, notas reais ou capturas de ecrã com informação privada de alunos.
+Indica a versão da aplicação, o dispositivo, os passos para reproduzir e o resultado observado. Remove sempre dados pessoais das capturas de ecrã.
