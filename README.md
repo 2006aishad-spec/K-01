@@ -32,9 +32,9 @@ O APK ainda não está anexado a uma [Release](../../releases). Não há, neste 
 
 ## Código-fonte e sincronização
 
-O arquivo `code.zip` recebido contém 108 entradas, incluindo código da aplicação e do servidor, configurações, migrações de base de dados e testes. O arquivo ZIP é válido.
+O arquivo `code.zip` recebido contém 108 entradas, incluindo código da aplicação e do servidor, configurações, migrações de base de dados e testes. O arquivo ZIP original é válido. Foi preparado um arquivo limpo, removendo cache local `.expo/`.
 
-**Atenção:** a inspeção do ZIP não significa que o seu conteúdo já tenha sido carregado integralmente para este repositório. A integração atual permite gerir ficheiros de texto, mas não forneceu uma operação direta para extrair e transferir automaticamente o ZIP completo como um conjunto de ficheiros. A sincronização automática com o construtor original e a compilação de novas versões também não estão configuradas.
+**Atenção:** a inspeção do ZIP não significa que o seu conteúdo já tenha sido carregado integralmente para este repositório. O código-fonte completo ainda não foi anexado a uma Release nem extraído para as pastas do repositório. Consulte [como publicar o código-fonte a partir do telemóvel](docs/COMO-PUBLICAR-CODIGO-FONTE.md). A sincronização automática com o construtor original e a compilação de novas versões também não estão configuradas.
 
 ## Validação pendente
 
